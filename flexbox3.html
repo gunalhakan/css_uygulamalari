@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox 3</title>
+    <style>
+        *{
+            margin:0;padding:0;
+        }
+        .row {
+            width:90%;
+            margin: 10px auto;
+            display: flex;
+            gap: 10px;
+            background-color: lightgrey;
+            height: 100px;
+        }
+
+        .a {
+            flex-grow: 1;
+            flex-shrink:0;
+            flex-basis:auto;
+            background-color: aquamarine;
+        }
+
+        /* esnek */
+        .b {
+            flex-grow: 1;
+            flex-shrink:0;
+            flex-basis:auto;
+            background-color: lightcoral;
+        }
+
+        /* daha çok büyür */
+        .c {
+            /*iç elemanlarda verilen flex özelliği kısa kullanım içindir
+                1. özellik : flex-grow : diğerlerine oranla ne kadar büyük olduğunu ve büyüyeceğini belirler. Default 0 
+                2. özellik : flex-shrink : diğerlerine oranla ne kadar küçük olduğunu ve küçüleceğini belirler. Default 1
+                3. özellik : flex-basis : Tüm elemanlara verildiğinde ilk durumdaki genişliğini tanımlar, 
+                sadece 1 elemana verildiğinde küçüldüğünde en son kaç genişliğinde kalacağını belirtir. Varsayılan :auto dur.
+            */
+            
+            /* flex: 1 0 500px; */
+            flex-grow:3;
+            flex-shrink: 0;
+            flex-basis:auto;
+            background-color: lightgreen;
+        }
+
+        /* minimum 150px, esnemeye izin ver */
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+    </div>
+
+
+</body>
+
+</html>

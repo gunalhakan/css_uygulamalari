@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox 2</title>
+    <style>
+        .nav{
+            display: flex;
+            gap: 10px;
+            background-color: lightgray;
+            
+            /*elemanların dikey/ hizalanması işlemi */ 
+            /*row, cloumn, row-reverse, column-reverse*/
+            flex-direction: column; 
+            
+            /*Satır ya da sütun durumuna göre elemanların ana eksende hizalanması için kullanılır*/ 
+            /*flex-start, flex-end, center, space-between, space-around, space, evenly*/
+            justify-content: center;  
+            
+            
+            /*direction a göre seçilen boyutun diğer boyutunda hizalama yapmak için kullanılır. 
+            Örnek  :direction: row; seçildiğinde yatayda hizalamayı justiy content, dikey de hizalamayı align items yapar.
+            */
+            /*center, flex-start, flex-end, baseline değerlerini alır.*/
+            align-items:flex-end; 
+
+
+            /*satır taşması işlemi olduğunda alt satıra veya yana geçmek için kullanılır.
+            wrap, no-wrap, wrap-reverse değerlerini alır.
+            */
+            flex-wrap: wrap;
+            height: 200px;
+        }
+        .nav div{
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .logo{
+            background-color: aquamarine;
+        }
+        .menu{
+            background-color: lightcoral;
+        }
+        .arama{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo" >Logo</div>
+        <div class="menu">Menü</div>
+        <div class="arama">Arama</div>
+    </div>
+
+</body>
+
+</html>
