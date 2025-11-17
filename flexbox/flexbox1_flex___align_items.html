@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox 1</title>
+    <style>
+        .nav{
+            display: flex;
+            gap: 10px; /*Elemanlar arasındaki boşluk*/
+            background-color: lightgray;
+            align-items: center; /*dikey eksende yerleştirme için kullanılır*/
+            height: 300px;
+        }
+        .nav div{
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .logo{
+            background-color: aquamarine;
+            margin-right: 50px;
+        }
+        .menu{
+            background-color: lightcoral;
+            margin-left:30px;
+        }
+        .arama{
+            margin-left: 50px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo" >Logo</div>
+        <div class="menu">Menü</div>
+        <div class="arama">Arama</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site İskeleti</title>
+    <style>
+        *{
+            margin:0;padding: 0;
+        }
+        .container{
+            background-color: #ECD5BC;
+            padding:10px;
+            margin:10px auto;
+            width: 90%;
+        }
+        .header{
+            background-color: #758A93;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            color: #ECD5BC;
+            margin-bottom: 10px;
+        }
+        .main{
+           
+            margin-bottom: 10px;
+            display: flex;
+            gap:10px;
+            padding: 10px;
+        }
+        .aside{
+            flex-grow: 1;
+            background-color: #C66E52;
+            padding:10px;
+        }
+        .article{
+            flex-grow: 3;
+            background-color: #E9B63B;
+            padding:10px;
+
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+        }
+        .article .text{
+            flex-shrink:1;
+            flex-grow:1;
+            flex-basis:400px;
+            background-color: cadetblue;
+        }
+        .article .image{
+            flex-shrink: 1;
+            flex-grow:1;
+            flex-basis:400px;
+            background-color: aquamarine;
+            
+        }
+        .article h2, .article p{
+            margin-bottom: 10px;
+        }
+        .footer{
+            background-color: #758A93 ;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .image img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="main">
+            <div class="aside">
+                <a href="#">Anasayfa</a><br>
+                <a href="#">Hakkımızda</a><br>
+                <a href="#">İletişim</a><br>
+            </div>
+            <div class="article">
+                <div class="section text">
+
+                
+                    <h2>Hoşgeldiniz</h2>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ut in natus obcaecati laudantium consectetur, ducimus iusto dolorem similique reprehenderit cupiditate aut totam magni, maiores inventore ratione porro molestiae quis.
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore suscipit molestiae, itaque blanditiis repudiandae at. Nemo aliquid, porro voluptatum ipsam enim magnam sed quaerat reprehenderit repellat, fuga repudiandae nobis molestiae.
+                    </p>
+                </div>
+                <div class="section image">
+                    <img src="img/ice_cream.jpg" alt=""> 
+                </div>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

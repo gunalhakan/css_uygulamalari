@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 4</title>
+    <style>
+        .cards {
+            display: flex;
+            /* Elemanların boyutları yatayda yerleşemediğinde alt satıra kaydırmak için kullanılır*/
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .card {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 350px;
+            /* Eğer elemanlar min 220px altına inecek şekilde sayfa küçülürse alt satıra kaydırma işlemi yapılır. */
+            /* flex: 1 1 220px; */
+
+            /*min-width 180px olduğu için bu boyutun altına inemezler */
+            min-width: 180px;
+            height: 140px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 140px;
+        }
+        .c1{ background-color: lightgrey;  }
+        .c2{ background-color: lightblue;  }
+        .c3{ background-color: lightcoral;  }
+        .c4{ background-color: lightgreen;  }
+    </style>
+</head>
+
+<body>
+
+    <div class="cards">
+        <div class="card c1">1</div>
+        <div class="card c2">2</div>
+        <div class="card c3">3</div>
+        <div class="card c4">4</div>
+    </div>
+
+
+</body>
+
+</html>
