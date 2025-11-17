@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Fixed</title>
+    <style>
+        *{
+            margin:0;padding: 0;
+            
+        }
+        .container{
+            width: 450px;
+            height: 450px;
+            background-color: bisque;
+            margin-left: 250px;
+            
+                        
+        }
+        .f1{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-color: lightskyblue;
+
+            /*
+            fixed normal sayfa akışından ayrılır, 
+            konumunu body e göre alır.
+            Diğer elemanlar onun boş bıraktığı bölüme kayar. (relative de kaymıyordu)
+
+            Elemanın konumu absolute ile değiştirildiğinde eski yeri boş kalmaz, 
+            diğer elemanlar boş kalan yeri doldurur.
+            
+            Her durumda konumunu body e göre alır
+            */
+
+            
+            position: fixed;
+            left: 200px;
+            bottom: 50px;
+        }
+        .f2{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="f1">Fixed 1 </div>
+        <div class="f2"></div>
+    </div>
+    
+</body>
+</html>

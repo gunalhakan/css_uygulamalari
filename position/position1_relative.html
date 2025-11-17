@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        *{
+            margin:0;padding: 0;
+        }
+        .container{
+            width: 450px;
+            height: 450px;
+            background-color: bisque;
+            
+        }
+        .r1{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-color: lightskyblue;
+
+            /*position : sayfadaki elemanların konumlarını değiştirmek için kullanılır. 
+            static(varsayılan) relative, absolute, fixed ve sticky değerlerini alır.
+            top, left, bottom ve right özellikleri ile birlikte kullanılır. 
+
+            relative normal sayfa akışında bulunması gereken yere göre 
+            konumunu değiştirmek için kullanılır. 
+            Elemanın konumu relative ile değiştirildiğinde eski yeri boş kalır, 
+            diğer elemanlar boş kalan yeri doldurmaz.
+            */
+            position: relative;
+            left: 100px;
+            top: 50px;
+        }
+        .r2{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="r1">Relative İç 1 </div>
+        <div class="r2"></div>
+    </div>
+    
+</body>
+</html>
